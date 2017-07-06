@@ -1,13 +1,17 @@
 AutoHotKey Scripts
 ==================
 
-### NewFile (Ctrl+Alt+N)
+### NewFile <kbd><kbd>Alt</kbd>+<kbd>N</kbd></kbd>
 
-Create a new blank file. This script is a Fork of [this](https://gist.github.com/davejamesmiller/1965432).
+Create a new blank file. Works on Windows 7-10.  
+Thanks to:
 
-### NewTextFile (Ctrl+Shift+T)
+- [davejamesmiller/create-new-file.ahk](https://gist.github.com/davejamesmiller/1965432)
+- [TheBeastOfCaerbannog/create-new-file.ahk](https://gist.github.com/discover)
 
-Create a new blank text file.
+### NewTextFile <kbd><kbd>Alt</kbd>+<kbd>T</kbd></kbd>
+
+Create a new blank text file.  
 The difference of "NewFile" is auto appending ".txt" extension.
 
 ### bluewind (Win+Space)
