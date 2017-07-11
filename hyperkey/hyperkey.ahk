@@ -4,16 +4,16 @@
 #InstallKeybdHook
 #SingleInstance force
 
-Menu, Tray, Icon, shell32.dll, 134
+Menu, Tray, Icon, shell32.dll, 319
 
 SendMode Input
 
 ;; note: must use tidle prefix to fire hotkey once it is pressed
 ;; not until the hotkey is released
 ~F15::
-    ;; must use downtemp to emulate hyper key, you cannot use down in this case 
+    ;; must use downtemp to emulate hyper key, you cannot use down in this case
     ;; according to http://bit.ly/2fLyHHI, downtemp is as same as down except for ctrl/alt/shift/win keys
-    ;; in those cases, downtemp tells subsequent sends that the key is not permanently down, and may be 
+    ;; in those cases, downtemp tells subsequent sends that the key is not permanently down, and may be
     ;; released whenever a keystroke calls for it.
     ;; for example, Send {Ctrl Downtemp} followed later by Send {Left} would produce a normal {Left}
     ;; keystroke, not a Ctrl{Left} keystroke
