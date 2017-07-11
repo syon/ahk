@@ -2,6 +2,7 @@ Hyperkey <kbd>CapsLock</kbd>
 ============================
 
 Emulates hyperkey (yet another modifier key) on Windows.  
+Main use case is getting same experience of macOS keyboard.
 
 
 ## keymap
@@ -9,7 +10,8 @@ Emulates hyperkey (yet another modifier key) on Windows.
 Hyperkey is assigned to <kbd>CapsLock</kbd>.
 
 | Shortcut | Perform | For |
-|----------|---------|---------|
+|----------|---------|-----|
+| <kbd>CapsLock</kbd> | <kbd>F13</kbd> | IME OFF (see below) |
 | <kbd>CapsLock</kbd> + <kbd>B</kbd> | <kbd>◀</kbd> | Left |
 | <kbd>CapsLock</kbd> + <kbd>F</kbd> | <kbd>▶</kbd> | Right |
 | <kbd>CapsLock</kbd> + <kbd>P</kbd> | <kbd>▲</kbd> | Up |
@@ -35,6 +37,8 @@ Hyperkey is assigned to <kbd>CapsLock</kbd>.
 
 ## setup
 
+### Remap CapsLock Key
+
 In this script, Hyperkey is assigned to <kbd>F15</kbd>.
 Standard keyboards don't have <kbd>F15</kbd>, therefore,
 I choose it.
@@ -44,6 +48,16 @@ In order to remap <kbd>CapsLock</kbd> key,
 I recommend __SharpKeys__.
 
 - [Releases · randyrants/sharpkeys](https://github.com/randyrants/sharpkeys/releases)
+
+### IME Settings for Japanese (Optional)
+
+#### Google 日本語入力
+
+| モード | 入力キー | コマンド |
+|-------|----------|---------|
+| 入力文字なし | <kbd>Katakana</kbd> | IMEを有効化 |
+| 入力文字なし | <kbd>Muhenkan</kbd> | IMEを無効化 |
+| 入力文字なし | <kbd>F13</kbd> | IMEを無効化 |
 
 
 ## forked from
