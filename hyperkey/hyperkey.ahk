@@ -21,7 +21,7 @@ SendMode Input
     KeyWait, F15
 ;;  Send {Ctrl Up}{Shift Up}{Alt Up}{LWin Up}
     if (A_PriorKey = "F15") {
-        Send {F13}
+        Send {F13} ; IME OFF
     }
 return
 
