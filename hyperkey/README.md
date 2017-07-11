@@ -49,6 +49,8 @@ I recommend __SharpKeys__.
 
 - [Releases · randyrants/sharpkeys](https://github.com/randyrants/sharpkeys/releases)
 
+![](./SharpKeys.png)
+
 ### IME Settings for Japanese (Optional)
 
 #### Google 日本語入力
