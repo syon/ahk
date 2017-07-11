@@ -26,10 +26,10 @@ SendMode Input
 return
 
 ;; Navigation
-~F15 & b:: Send {Blind}{Left}    ; capslock + B     : ←
-~F15 & f:: Send {Blind}{Right}   ; capslock + F     : →
-~F15 & p:: Send {Blind}{Up}      ; capslock + P     : ↑
-~F15 & n:: Send {Blind}{Down}    ; capslock + N     : ↓
+~F15 & b:: Send {Blind}{Left}    ; capslock + B     : ◀
+~F15 & f:: Send {Blind}{Right}   ; capslock + F     : ▶
+~F15 & p:: Send {Blind}{Up}      ; capslock + P     : ▲
+~F15 & n:: Send {Blind}{Down}    ; capslock + N     : ▼
 ~F15 & a:: Send {Blind}{Home}    ; capslock + A     : Home
 ~F15 & e:: Send {Blind}{End}     ; capslock + E     : End
 ~F15 & ,:: Send {Blind}^{Home}   ; capslock + ,     : Ctrl-Home

@@ -1,6 +1,10 @@
 AutoHotKey Scripts
 ==================
 
+### Hyperkey <kbd>CapsLock</kbd>
+
+- [hyperkey/README.md](./hyperkey/README.md)
+
 ### NewFile <kbd><kbd>Alt</kbd>+<kbd>N</kbd></kbd>
 
 Create a new blank file. Works on Windows 7-10.  
