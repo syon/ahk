@@ -1,5 +1,4 @@
-; Forked from
-; https://stackoverflow.com/questions/40435980
+;; Forked from https://stackoverflow.com/questions/40435980
 #NoEnv ; recommended for performance and compatibility with future autohotkey releases.
 #UseHook
 #InstallKeybdHook
@@ -42,7 +41,7 @@ return
 ;; Function
 ~F15 & q:: Send !{F4}            ; capslock + Q     : Alt-F4
 ~F15 & Enter:: Send {F2}         ; capslock + Enter : F2
-~F15 & Tab:: Send {F5}           ; capslock + Tab   : F5
+~F15 & r:: Send {F5}             ; capslock + R     : F5
 
 ;; Hotkeys
 ~F15 & c:: Send ^{c}             ; capslock + C     : Ctrl-C (Copy)
@@ -53,18 +52,4 @@ return
 ~F15 & t:: Send ^{t}             ; capslock + T     : Ctrl-T (New Tab)
 
 ;; Mouse
-~F15 & Space:: Click                        ; クリック
-~F15 & Numpad9:: MouseMove,  50, -50, 2, R  ; 右上
-~F15 & Numpad8:: MouseMove,   0, -50, 2, R  ; 上
-~F15 & Numpad7:: MouseMove, -50, -50, 2, R  ; 左上
-~F15 & Numpad6:: MouseMove,  50,   0, 2, R  ; 右
-~F15 & Numpad5:: Click                      ; クリック
-~F15 & Numpad4:: MouseMove, -50,   0, 2, R  ; 左
-~F15 & Numpad3:: MouseMove,  50,  50, 2, R  ; 右下
-~F15 & Numpad2:: MouseMove,   0,  50, 2, R  ; 下
-~F15 & Numpad1:: MouseMove, -50,  50, 2, R  ; 左下
-~F15 & Numpad0:: MouseMove, 200, 200, 2     ; アクティブウィンドウ
-~F15 & NumpadAdd::                          ; スクリーン中央
-  HalfW := A_ScreenWidth // 2
-  HalfH := A_ScreenHeight // 2
-  DllCall("SetCursorPos", int, HalfW, int, HalfH)
+~F15 & Space:: Click             ; Click
