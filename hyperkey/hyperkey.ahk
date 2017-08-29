@@ -1,10 +1,10 @@
-;; Forked from https://stackoverflow.com/questions/40435980
+﻿;; Forked from https://stackoverflow.com/questions/40435980
 #NoEnv ; recommended for performance and compatibility with future autohotkey releases.
 #UseHook
 #InstallKeybdHook
 #SingleInstance force
 
-Menu, Tray, Icon, shell32.dll, 319
+;; Menu, Tray, Icon, shell32.dll, 319
 
 SendMode Input
 
@@ -20,9 +20,9 @@ SendMode Input
 ;;  Send {Ctrl DownTemp}{Shift DownTemp}{Alt DownTemp}{LWin DownTemp}
     KeyWait, F15
 ;;  Send {Ctrl Up}{Shift Up}{Alt Up}{LWin Up}
-    if (A_PriorKey = "F15") {
-        Send {F13} ; IME OFF
-    }
+;;  if (A_PriorKey = "F15") {
+;;      Send {F13} ; IME OFF
+;;  }
 return
 
 ;; Navigation
@@ -44,12 +44,18 @@ return
 ~F15 & r:: Send {F5}             ; capslock + R     : F5
 
 ;; Hotkeys
-~F15 & c:: Send ^{c}             ; capslock + C     : Ctrl-C (Copy)
-~F15 & v:: Send ^{v}             ; capslock + V     : Ctrl-V (Paste)
+~F15 & [:: Send ^{PgUp}          ; capslock + [     : Previous Tab
+~F15 & ]:: Send ^{PgDn}          ; capslock + ]     : Next Tab
 ~F15 & s:: Send ^{s}             ; capslock + S     : Ctrl-S (Save)
 ~F15 & w:: Send ^{w}             ; capslock + W     : Ctrl-W (Close)
 ~F15 & l:: Send ^{l}             ; capslock + L     : Ctrl-L (Clear Console)
 ~F15 & t:: Send ^{t}             ; capslock + T     : Ctrl-T (New Tab)
+~F15 & v::
+  If GetKeyState("Shift")
+    Send {PgUp}                  ; capslock + shift + V : Page Up
+  Else
+    Send {PgDn}                  ; capslock + V         : Page Down
+  Return
 
 ;; Mouse
 ~F15 & Space:: Click             ; Click
