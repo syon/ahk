@@ -44,8 +44,8 @@ return
 ~F15 & r:: Send {F5}             ; capslock + R     : F5
 
 ;; Hotkeys
-~F15 & 9:: Send ^{PgUp}          ; capslock + [     : Previous Tab
-~F15 & 0:: Send ^{PgDn}          ; capslock + ]     : Next Tab
+~F15 & 9:: Send ^{PgUp}          ; capslock + 9     : Previous Tab
+~F15 & 0:: Send ^{PgDn}          ; capslock + 0     : Next Tab
 ~F15 & [:: Send #^{Left}         ; capslock + [     : Left Desktop
 ~F15 & ]:: Send #^{Right}        ; capslock + ]     : Right Desktop
 ~F15 & s:: Send ^{s}             ; capslock + S     : Ctrl-S (Save)
