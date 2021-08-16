@@ -1,4 +1,4 @@
-#Persistent
+﻿#Persistent
 #NoEnv
 #UseHook
 #InstallKeybdHook
