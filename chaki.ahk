@@ -18,7 +18,7 @@ return
 !+;::Send, %A_YYYY%%A_MM%%A_DD%
 
 ;; Shift+Alt+コロン 日付時刻入力
-!+*::Send, %A_YYYY%%A_MM%%A_DD%-%A_Hour%%A_Min%_
+!+*::Send, %A_YYYY%%A_MM%%A_DD%-%A_Hour%%A_Min%
 
 ;; Alt+Pause 環境変数ダイアログ
 LAlt & Pause::Run % "rundll32 sysdm.cpl,EditEnvironmentVariables"
