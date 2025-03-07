@@ -9,9 +9,10 @@ Open `KeepAwake.ahk` or `KeepAwake.exe`.
 Send a signal to your cursor at the interval of 3 min.
 To avoid infinite awake, it'll be stopped after 60 min and show a dialog.
 
-- __<kbd>Esc</kbd> or right click__: the countdown will be reset.
-- <kbd>Ctrl + Alt + Shift + K</kbd>: Restart.
-- <kbd>Ctrl + Alt + Shift + U</kbd>: Off (will be locked).
+- the countdown will be reset:
+  - <kbd>Esc</kbd>
+  - <kbd>Mouse right click</kbd>
+  - <kbd>Win</kbd> (Left & Right)
 
 ## run on startup
 

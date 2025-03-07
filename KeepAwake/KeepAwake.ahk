@@ -1,4 +1,4 @@
-﻿#Persistent
+#Persistent
 
 KeepMinutes := 60
 IntervalMinutes := 3
@@ -23,18 +23,7 @@ return
 
 ~Esc::
 ~RButton::
+~LWin::
+~RWin::
   cnt := 0
-return
-
-
-^+!K::
-  SetTimer, OnAwake, On
-  cnt := 0
-  MsgBox, Keep Screen Mode
-return
-
-
-^+!U::
-  SetTimer, OnAwake, Off
-  MsgBox, Will be Screen Locked
 return
